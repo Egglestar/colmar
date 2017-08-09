@@ -119,6 +119,9 @@ nav a{
 main {
   max-width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #banner {
@@ -191,7 +194,6 @@ main {
 }
 
 
-
 /* INFORMATION */
 
 #information {
@@ -235,11 +237,12 @@ main {
 }
 
 .side-box img {
-  max-width: 35%;
+  width: 35%;
   height: auto;
 }
 
 .side-box-text {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,6 +259,49 @@ main {
 
 #lecture {
   background-color: rgb(216, 216, 216);
+}
+
+@media only screen and (max-width: 1072px) {
+
+  #information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #main-bar {
+    display: none;
+  }
+
+  .side-bar {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+  }
+
+  .side-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-box-text h3, .side-box-text p, .side-box-text a {
+    padding-top: 1rem;
+  }
+
+  #lecture {
+    background-color: inherit;
+  }
+
+  #campus, #lecture {
+    padding-top: 3rem;
+  }
 }
 
 /*  COURSE */
@@ -297,6 +343,36 @@ main {
 .text-box h3, .text-box h4 {
   padding-bottom: 0.5rem;
 }
+
+  /* COURSE - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    #course-content {
+      background-color: rgb(246, 246, 246);
+    }
+
+    #course {
+      display: none;
+      }
+
+    #course-mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #course-mobile a {
+      background-color: rgb(216, 216, 216);
+      padding: 1rem 1rem 1.5rem 1rem;
+      margin: 1rem 1rem 0.5rem 1rem;
+      color: black;
+      font-size: 1.5rem;
+    }
+
+
+
+  }
 
 /*  THESIS  */
 
