@@ -37,12 +37,17 @@ p {
 
 header {
   width: 100%;
-  height: 4rem;
+
+  background-color: rgb(256, 256, 256);
   position: fixed;
+}
+
+.desktop {
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(256, 256, 256);
+
 }
 
 #logo {
@@ -83,9 +88,42 @@ nav a{
   color: rgb(72, 72, 72);
 }
 
+.mobile {
+  display: none;
+}
+
+  /* HEADER - MOBILE */
+
+@media only screen and (max-width: 1072px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .mobile ul {
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+}
+
 /* BANNER */
 
+main {
+  max-width: 100%;
+  height: auto;
+}
+
 #banner {
+  width: 100%;
+  height: auto;
   display: flex;
   background-color: rgb(216, 216, 216);
   padding-top: 4rem;
@@ -114,6 +152,45 @@ nav a{
   color: white;
   text-align: center;
 }
+
+  /* BANNER-MOBILE */
+
+@media only screen and (max-width: 1072px) {
+
+  #banner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-text {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: inherit;
+    align-self: flex-start;
+  }
+
+.banner-text h1, .banner-text h2 {
+  padding: 2rem 0 0 1rem;
+  margin: 0;
+}
+
+  .banner-text a {
+    align-self: center;
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+}
+
+
 
 /* INFORMATION */
 
