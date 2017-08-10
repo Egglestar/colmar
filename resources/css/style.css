@@ -111,6 +111,10 @@ nav a{
     align-items: center;
   }
 
+  nav ul {
+    padding: 0;
+  }
+
 
 }
 
@@ -169,6 +173,7 @@ main {
   #banner img {
     width: 100%;
     height: auto;
+    padding: 0;
   }
 
   .banner-text {
@@ -350,6 +355,7 @@ main {
 
     #course-content {
       background-color: rgb(246, 246, 246);
+      padding-bottom: 1.5rem;
     }
 
     #course {
@@ -369,9 +375,6 @@ main {
       color: black;
       font-size: 1.5rem;
     }
-
-
-
   }
 
 /*  THESIS  */
@@ -389,7 +392,7 @@ main {
 }
 
 .thesis-content {
-  max-width: 100%;
+  width: 100%;
   display: flex;
 }
 
@@ -414,13 +417,36 @@ video {
   background-color: rgb(216, 216, 216);
 }
 
+  /*  THESIS - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    #thesis-exhibit {
+      padding: 0 0 1.5rem 0;
+    }
+
+    #thesis-exhibit h1 {
+      padding-bottom: 1rem;
+    }
+
+    #video h3, #video p, .side-bar {
+      display: none;
+    }
+
+    #video {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
 /* FOOTER */
 
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 1rem 4rem 1.5rem;
+  padding: 1rem 1rem 4rem 1.5rem;
 }
 
 footer ul {
@@ -433,3 +459,17 @@ footer a {
   color: rgb(72, 72, 72);
   padding-left: 0.5rem;
 }
+
+  /* FOOTER - MOBILE */
+
+  @media only screen and (max-width: 1072px) {
+
+    footer ul {
+      display: none;
+    }
+
+    footer p {
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+  }
