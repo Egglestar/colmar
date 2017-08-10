@@ -1,4 +1,4 @@
-/*{border: 1px red dashed !important;}*/
+/* STYLE-SHEET FOR COLMAR ACADEMY */
 
 html {
   font-size: 16px;
@@ -452,7 +452,6 @@ footer {
 footer ul {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
 }
 
 footer a {
@@ -464,12 +463,15 @@ footer a {
 
   @media only screen and (max-width: 1072px) {
 
+    footer {
+      padding: 1rem;
+    }
+
     footer ul {
       display: none;
     }
 
     footer p {
-      padding: 1rem;
       font-size: 1.3rem;
     }
   }
